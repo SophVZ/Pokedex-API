@@ -53,6 +53,11 @@ class Pokemon {
     get velocidad(){
         return `${this.estadisticas.speed}`
     }
+    get etiquetaEspecial(){
+        return !this.isDefault
+        ?`<span class="badge bg-warning text-dark">Forma Especial / Mega</span>`
+        :"";
+    }
     get habilidades(){
         const listaAbilities=this.abilities.map(a=>a.ability.name);
         return `${listaAbilities.join(' ,')}.`
