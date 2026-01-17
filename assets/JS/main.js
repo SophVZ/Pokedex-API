@@ -45,10 +45,10 @@ class Pokemon {
         return `${this.estadisticas.defense}`
     }
     get ataqueEspecial(){
-        return `${this.estadisticas[special-attack]}`
+        return `${this.estadisticas['special-attack']}`
     }
     get defensaEspecial(){
-        return `${this.estadisticas[special-defense]}`
+        return `${this.estadisticas['special-defense']}`
     }
     get velocidad(){
         return `${this.estadisticas.speed}`
