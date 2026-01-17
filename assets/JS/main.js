@@ -66,4 +66,28 @@ class Pokemon {
         const listaMovimientos=this.moves.slice(0, 4).map(m=>m.move.name);
         return `${listaMovimientos.join(', ')}.`
     }
+    render (){
+        return `
+    <div class="card shadow-sm py-2" style="width: 30rem;">
+        <img src="${this.imagen}" class="card-img-top p-3" alt="${this.nombre}">
+        <div class="card-body">
+            <h5 class="card-title text-capitalize text-center">${this.nombre} ${this.etiquetaEspecial} (#${this.id})</h5>
+            <hr>
+            <p class="card-text"><strong>Tipos:</strong> ${this.tipos}</p>
+            <h6><strong>Físico:</strong></h6>
+            <p class="card-text "><span class="fw-semibold">Peso:</span> ${this.peso}</p>
+            <p class="card-text"><span class="fw-semibold">Altura:</span> ${this.altura}</p>
+            <h6><strong>Estadísticas Base:</strong></h6>
+            <div class="col-rows d-flex flex-column pb-3">
+                <small class="col"><span class="fw-semibold">HP:</span> ${this.hp} | <span class="fw-semibold">ATK:</span> ${this.ataque} | <span class="fw-semibold">DEF:</span> ${this.defensa}</small>
+                <small class="col"><span class="fw-semibold">ATK-SP:</span> ${this.ataqueEspecial} | <span class="fw-semibold">DEF-SP:</span> ${this.defensaEspecial}</small>
+                <small class="col"><span class="fw-semibold">VEL:</span> ${this.velocidad}</small>
+            </div>
+            <h6><strong>Habilidades:</strong></h6>
+            <p class="card-text">${this.habilidades}</p>
+            <h6><strong>Movimientos:</strong></h6>
+            <p class="card-text">${this.movimientos}</p>
+        </div>
+    </div>`
+    }
 }
