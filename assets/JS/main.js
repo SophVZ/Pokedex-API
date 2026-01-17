@@ -1,17 +1,20 @@
 class Pokemon {
     constructor(data){
+        //principal
         this.nombre=data.name;
         this.id=data.id;
         this.sprites=data.sprites;
         this.types=data.types;
+        //fisico-stats
         this.height=data.height;
         this.weight=data.weight;
         this.stats=data.stats;
-        this.isDefault
-        this.order
-        this.abilities
+        //datos identificacion
+        this.isDefault=data.is_default;
+        this.order=data.order;
+        //avanzadas
+        this.abilities=data.abilities;
         this.moves
-        this.baseExperience
     }
     get imagen(){
         return this.sprites.other['official-artwork'].front_default
@@ -31,5 +34,13 @@ class Pokemon {
             acc[item.stat.name] = item.base_stat;
             return acc;
         }, {});
+    }
+    get habilidades(){
+        const listaAbilities=this.abilities.map(a=>a.ability.name);
+        return `${listaAbilities.join(' ,')}.`
+    }
+    get movimientos(){
+        const listaMovimientos=this.moves.slice(0, 4).map(m=>m.move.name);
+        return `${listaMovimientos.join(', ')}.`
     }
 }
