@@ -1,4 +1,4 @@
-class Pokemon {
+export class Pokemon {
     constructor(data){
         //principal
         this.nombre=data.name;
