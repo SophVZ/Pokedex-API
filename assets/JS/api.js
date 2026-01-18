@@ -37,6 +37,8 @@ async function buscarPokemon() {
         console.error(error);
     }
 }
+//codigo en caso de que sea evento onclick en el html
+window.buscarPokemon = buscarPokemon;
 
 // ============================================
 //🌐 api.js — Ingeniero de Datos
@@ -47,3 +49,4 @@ async function buscarPokemon() {
 // de errores cuando el Pokémon no existe.”
 
 // ============================================
+
