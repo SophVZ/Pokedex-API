@@ -47,6 +47,7 @@ window.buscarPokemon = buscarPokemon;
 // la lógica de consumo del servicio mediante fetch, 
 // manejo de asincronía con async/await y control 
 // de errores cuando el Pokémon no existe.”
+// ============================================
 
 // ============================================
 
