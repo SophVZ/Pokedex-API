@@ -2,7 +2,7 @@
 // UI.JS - LÓGICA DE INTERFAZ (POKÉDEX)
 // Rol: Diseñador UI
 // ============================================
-
+import {buscarPokemon} from './api.js';
 // Mostrar mensaje de carga en la pantalla Pokédex
 function mostrarCargando() {
     const resultado = document.getElementById("resultado");
