@@ -3,6 +3,8 @@
 // Rol: Ingeniero de datos
 // ============================================
 
+import {Pokemon} from './clase-pokemon.js';
+
 async function buscarPokemon() {
     const input = document.getElementById("pokemonInput").value.toLowerCase();
     const resultado = document.getElementById("resultado");
@@ -35,6 +37,8 @@ async function buscarPokemon() {
         console.error(error);
     }
 }
+//codigo en caso de que sea evento onclick en el html
+window.buscarPokemon = buscarPokemon;
 
 // ============================================
 //🌐 api.js — Ingeniero de Datos
@@ -44,3 +48,6 @@ async function buscarPokemon() {
 // manejo de asincronía con async/await y control 
 // de errores cuando el Pokémon no existe.”
 // ============================================
+
+// ============================================
+
