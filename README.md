@@ -29,7 +29,7 @@ Debido a que el proyecto utiliza Módulos de JavaScript, es necesario abrirlo a 
 ####Estructura del proyecto:
 | Ruta relativa | Archivo	| Función |
 | :--- | :--- | :--- |
-| README.MD | README.md | Descripción del proyecto, cargos y método de clonación. |
+| README.md | README.md | Descripción del proyecto, cargos y método de clonación. |
 | index.html | index.html	| Estructura principal de la PokéDex y carga del módulo ui.js. |
 | assets/CSS/estilo.css | estilo.css | Da estilo personalizado a la web. |
 | assets/JS/api.js | api.js | Gestiona las peticiones a la PokeAPI y coordina la lógica. |
