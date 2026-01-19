@@ -5,7 +5,7 @@
 
 import {Pokemon} from './clase-pokemon.js';
 
-async function buscarPokemon() {
+export async function buscarPokemon() {
     const input = document.getElementById("pokemonInput").value.toLowerCase();
     const resultado = document.getElementById("resultado");
 
